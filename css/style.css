@@ -1,0 +1,106 @@
+/* Lokalni font (ručnopisni) */
+@font-face {
+  font-family: NaslovRucno;
+  src: url("../font/DancingScript-Regular.ttf");
+}
+
+body{
+  background-image: url("../slike/pozadina.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.wrapper{
+  width: 900px;
+  max-width: 92%;
+  margin: 30px auto;
+  background-color: rgba(255,255,255,0.90);
+  padding: 20px;
+  border: 2px solid #222;
+}
+
+h1{ margin-top: 0; }
+p{ line-height: 1.5; }
+
+.naslov-ime{
+  font-family: NaslovRucno, cursive;
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.podnaslov{
+  color: #444;
+  margin-top: 0;
+}
+
+nav{
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+  padding: 10px 0;
+  margin: 15px 0 20px 0;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li{
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav a:hover{
+  color: #555;
+  text-decoration: underline;
+}
+
+/* Slike */
+.slika{
+  width: 280px;
+  height: auto;
+  border: 2px solid #222;
+  margin: 6px;
+}
+
+.galerija{
+  margin-top: 10px;
+}
+
+/* Video iframe */
+iframe{
+  border: 2px solid #222;
+}
+
+/* Footer */
+.footer{
+  margin-top: 20px;
+  font-size: 12px;
+  color: #444;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+/* Ujednačavanje veličine svih medija */
+.medij {
+  display: block;
+  width: 100%;
+  max-width: 600px;   /* svi će biti iste maksimalne širine */
+  height: auto;
+  margin: 15px auto;  /* centrirano */
+  border: 2px solid #222;
+}
+
+/* Video da se ponaša kao slike */
+video.medij {
+  background-color: #000;
+}
